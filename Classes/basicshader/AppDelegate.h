@@ -1,7 +1,8 @@
-#ifndef  _APP_DELEGATE_H_
-#define  _APP_DELEGATE_H_
+#ifndef  _BASICSHADER_APP_DELEGATE_H_
+#define  _BASICSHADER_APP_DELEGATE_H_
 
 #include "cocos2d.h"
+#include "SimpleAudioEngine.h"
 
 /**
 @brief    The cocos2d Application.
@@ -36,5 +37,5 @@ public:
     virtual void applicationWillEnterForeground();
 };
 
-#endif // _APP_DELEGATE_H_
+#endif // _BASICSHADER_APP_DELEGATE_H_
 

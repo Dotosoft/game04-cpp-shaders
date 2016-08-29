@@ -1,7 +1,8 @@
-#ifndef __HELLOWORLD_SCENE_H__
-#define __HELLOWORLD_SCENE_H__
+#ifndef _BASICSHADER_HELLOWORLD_SCENE_H_
+#define _BASICSHADER_HELLOWORLD_SCENE_H_
 
 #include "cocos2d.h"
+#include "GameResources.h"
 
 class HelloWorld : public cocos2d::Layer
 {
@@ -16,4 +17,4 @@ public:
     CREATE_FUNC(HelloWorld);
 };
 
-#endif // __HELLOWORLD_SCENE_H__
+#endif // _BASICSHADER_HELLOWORLD_SCENE_H_

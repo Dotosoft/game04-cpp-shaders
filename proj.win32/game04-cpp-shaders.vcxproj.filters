@@ -10,26 +10,38 @@
     <Filter Include="src">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\basicshader">
+      <UniqueIdentifier>{af52a6f2-96c1-47cd-9842-871e17788766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\basicshader">
+      <UniqueIdentifier>{f6f438a6-5088-4760-a021-5355bf81d64f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\fonts">
+      <UniqueIdentifier>{7bc108d5-aff1-4501-907b-a24f06d6285c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>win32</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\AppDelegate.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\Classes\basicshader\HelloWorldScene.cpp">
+      <Filter>src\basicshader</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\Classes\basicshader\AppDelegate.cpp">
+      <Filter>src\basicshader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>win32</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\AppDelegate.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\Classes\basicshader\AppDelegate.h">
+      <Filter>src\basicshader</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
+    <ClInclude Include="..\Classes\basicshader\HelloWorldScene.h">
+      <Filter>src\basicshader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameResources.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
@@ -37,5 +49,62 @@
     <ResourceCompile Include="game.rc">
       <Filter>resource</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\basicshader\colorRamp.png">
+      <Filter>resource\basicshader</Filter>
+    </Image>
+    <Image Include="..\Resources\basicshader\Default.png">
+      <Filter>resource\basicshader</Filter>
+    </Image>
+    <Image Include="..\Resources\basicshader\fps_images.png">
+      <Filter>resource\basicshader</Filter>
+    </Image>
+    <Image Include="..\Resources\basicshader\fps_images-hd.png">
+      <Filter>resource\basicshader</Filter>
+    </Image>
+    <Image Include="..\Resources\basicshader\fps_images-ipadhd.png">
+      <Filter>resource\basicshader</Filter>
+    </Image>
+    <Image Include="..\Resources\basicshader\grass.png">
+      <Filter>resource\basicshader</Filter>
+    </Image>
+    <Image Include="..\Resources\basicshader\Icon.png">
+      <Filter>resource\basicshader</Filter>
+    </Image>
+    <Image Include="..\Resources\basicshader\Icon%402x.png">
+      <Filter>resource\basicshader</Filter>
+    </Image>
+    <Image Include="..\Resources\basicshader\Icon-72.png">
+      <Filter>resource\basicshader</Filter>
+    </Image>
+    <Image Include="..\Resources\basicshader\Icon-Small.png">
+      <Filter>resource\basicshader</Filter>
+    </Image>
+    <Image Include="..\Resources\basicshader\Icon-Small%402x.png">
+      <Filter>resource\basicshader</Filter>
+    </Image>
+    <Image Include="..\Resources\basicshader\Icon-Small-50.png">
+      <Filter>resource\basicshader</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\basicshader\Info.plist">
+      <Filter>resource\basicshader</Filter>
+    </None>
+    <None Include="..\Resources\basicshader\iTunesArtwork">
+      <Filter>resource\basicshader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\fonts\arial.ttf">
+      <Filter>resource\fonts</Filter>
+    </Font>
+    <Font Include="..\Resources\fonts\Comic Sans MS.ttf">
+      <Filter>resource\fonts</Filter>
+    </Font>
+    <Font Include="..\Resources\fonts\Marker Felt.ttf">
+      <Filter>resource\fonts</Filter>
+    </Font>
   </ItemGroup>
 </Project>

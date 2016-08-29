@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -110,7 +110,6 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
       <Inputs>$(TargetFileName)</Inputs>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
@@ -147,18 +146,41 @@ xcopy /Y /Q "$(COCOS_X_ROOT)\cocos2d-x-3.12\prebuilt\win32\*.*" "$(OutDir)"
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Classes\AppDelegate.cpp" />
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\basicshader\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\basicshader\HelloWorldScene.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Classes\AppDelegate.h" />
-    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\basicshader\AppDelegate.h" />
+    <ClInclude Include="..\Classes\basicshader\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\GameResources.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
-  
   <ItemGroup>
     <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\basicshader\colorRamp.png" />
+    <Image Include="..\Resources\basicshader\Default.png" />
+    <Image Include="..\Resources\basicshader\fps_images-hd.png" />
+    <Image Include="..\Resources\basicshader\fps_images-ipadhd.png" />
+    <Image Include="..\Resources\basicshader\fps_images.png" />
+    <Image Include="..\Resources\basicshader\grass.png" />
+    <Image Include="..\Resources\basicshader\Icon%402x.png" />
+    <Image Include="..\Resources\basicshader\Icon-72.png" />
+    <Image Include="..\Resources\basicshader\Icon-Small%402x.png" />
+    <Image Include="..\Resources\basicshader\Icon-Small-50.png" />
+    <Image Include="..\Resources\basicshader\Icon-Small.png" />
+    <Image Include="..\Resources\basicshader\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\basicshader\Info.plist" />
+    <None Include="..\Resources\basicshader\iTunesArtwork" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\fonts\arial.ttf" />
+    <Font Include="..\Resources\fonts\Comic Sans MS.ttf" />
+    <Font Include="..\Resources\fonts\Marker Felt.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
