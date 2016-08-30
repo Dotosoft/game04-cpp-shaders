@@ -1,19 +1,14 @@
-#ifndef _BASICSHADER_HELLOWORLD_SCENE_H_
-#define _BASICSHADER_HELLOWORLD_SCENE_H_
+#ifndef  _BASICSHADER_CSE_EMBOSS_H_
+#define  _BASICSHADER_CSE_EMBOSS_H_
 
 #include "cocos2d.h"
 #include "GameResources.h"
-#include "basicshader\CSEColorRamp.h"
-#include "basicshader\CSEEmboss.h"
-#include "basicshader\CSEGrass.h"
+
+USING_NS_CC;
 
 namespace basicshader {
 
-	class CSEColorRamp;
-	class CSEEmboss;
-	class CSEGrass;
-
-	class HelloWorld : public cocos2d::Layer
+	class CSEEmboss : public cocos2d::Layer
 	{
 		public:
 			// there's no 'id' in cpp, so we recommend returning the class instance pointer
@@ -23,9 +18,9 @@ namespace basicshader {
 			virtual bool init();
 
 			// implement the "static create()" method manually
-			CREATE_FUNC(HelloWorld);
+			CREATE_FUNC(CSEEmboss);
 	};
 
 }
 
-#endif // _BASICSHADER_HELLOWORLD_SCENE_H_
+#endif  // _BASICSHADER_CSE_EMBOSS_H_

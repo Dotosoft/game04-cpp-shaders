@@ -30,6 +30,15 @@
     <ClCompile Include="..\Classes\basicshader\AppDelegate.cpp">
       <Filter>src\basicshader</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\basicshader\CSEColorRamp.cpp">
+      <Filter>src\basicshader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\basicshader\CSEEmboss.cpp">
+      <Filter>src\basicshader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\basicshader\CSEGrass.cpp">
+      <Filter>src\basicshader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -43,6 +52,15 @@
     </ClInclude>
     <ClInclude Include="..\Classes\GameResources.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\basicshader\CSEColorRamp.h">
+      <Filter>src\basicshader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\basicshader\CSEEmboss.h">
+      <Filter>src\basicshader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\basicshader\CSEGrass.h">
+      <Filter>src\basicshader</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +111,15 @@
       <Filter>resource\basicshader</Filter>
     </None>
     <None Include="..\Resources\basicshader\iTunesArtwork">
+      <Filter>resource\basicshader</Filter>
+    </None>
+    <None Include="..\Resources\basicshader\CSEGrass.fsh">
+      <Filter>resource\basicshader</Filter>
+    </None>
+    <None Include="..\Resources\basicshader\CSEColorRamp.fsh">
+      <Filter>resource\basicshader</Filter>
+    </None>
+    <None Include="..\Resources\basicshader\CSEEmboss.fsh">
       <Filter>resource\basicshader</Filter>
     </None>
   </ItemGroup>

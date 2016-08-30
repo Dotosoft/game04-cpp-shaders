@@ -4,7 +4,7 @@
 
 USING_NS_CC;
 
-using namespace cocostudio::timeline;
+using namespace basicshader;
 
 Scene* HelloWorld::createScene()
 {
@@ -43,15 +43,15 @@ bool HelloWorld::init()
 	MenuItemFont::setFontSize(24);
 	// 6 - color ramp Menu Item using blocks
 	auto itemColorRamp = MenuItemFont::create("Color Ramp", [&](Ref * sender) {
-		Director::getInstance()->pushScene(HelloWorld::createScene());
+		Director::getInstance()->pushScene(CSEColorRamp::createScene());
 	});
 	// 7 - Emboss menu item
 	auto emboss = MenuItemFont::create("Emboss", [&](Ref * sender) {
-		Director::getInstance()->pushScene(HelloWorld::createScene());
+		Director::getInstance()->pushScene(CSEEmboss::createScene());
 	});
 	// 7.1 - Grass menu item
 	auto grass = MenuItemFont::create("Grass", [&](Ref * sender) {
-		Director::getInstance()->pushScene(HelloWorld::createScene());
+		Director::getInstance()->pushScene(CSEGrass::createScene());
 	});
 	// 7.2 - Create menu
 	auto menu = Menu::create(itemColorRamp, emboss, grass, NULL);

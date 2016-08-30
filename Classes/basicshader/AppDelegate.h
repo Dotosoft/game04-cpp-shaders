@@ -4,38 +4,40 @@
 #include "cocos2d.h"
 #include "SimpleAudioEngine.h"
 
-/**
-@brief    The cocos2d Application.
+namespace basicshader {
 
-Private inheritance here hides part of interface from Director.
-*/
-class  AppDelegate : private cocos2d::Application
-{
-public:
-    AppDelegate();
-    virtual ~AppDelegate();
+	/**
+	@brief    The cocos2d Application.
 
-    virtual void initGLContextAttrs();
+	Private inheritance here hides part of interface from Director.
+	*/
+	class  AppDelegate : private cocos2d::Application
+	{
+		public:
+			AppDelegate();
+			virtual ~AppDelegate();
 
-    /**
-    @brief    Implement Director and Scene init code here.
-    @return true    Initialize success, app continue.
-    @return false   Initialize failed, app terminate.
-    */
-    virtual bool applicationDidFinishLaunching();
+			virtual void initGLContextAttrs();
 
-    /**
-    @brief  Called when the application moves to the background
-    @param  the pointer of the application
-    */
-    virtual void applicationDidEnterBackground();
+			/**
+			@brief    Implement Director and Scene init code here.
+			@return true    Initialize success, app continue.
+			@return false   Initialize failed, app terminate.
+			*/
+			virtual bool applicationDidFinishLaunching();
 
-    /**
-    @brief  Called when the application reenters the foreground
-    @param  the pointer of the application
-    */
-    virtual void applicationWillEnterForeground();
-};
+			/**
+			@brief  Called when the application moves to the background
+			@param  the pointer of the application
+			*/
+			virtual void applicationDidEnterBackground();
+
+			/**
+			@brief  Called when the application reenters the foreground
+			@param  the pointer of the application
+			*/
+			virtual void applicationWillEnterForeground();
+	};
+}
 
 #endif // _BASICSHADER_APP_DELEGATE_H_
-
