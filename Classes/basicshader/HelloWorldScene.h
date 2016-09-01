@@ -6,6 +6,9 @@
 #include "basicshader\CSEColorRamp.h"
 #include "basicshader\CSEEmboss.h"
 #include "basicshader\CSEGrass.h"
+#include "basicshader\CSEMedium.h"
+#include "basicshader\CSEBlink.h"
+#include "basicshader\CSEGray.h"
 
 namespace basicshader {
 

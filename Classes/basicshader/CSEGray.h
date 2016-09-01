@@ -1,5 +1,5 @@
-#ifndef  _BASICSHADER_CSE_COLOR_RAMPS_H_
-#define  _BASICSHADER_CSE_COLOR_RAMPS_H_
+#ifndef  _BASICSHADER_CSE_GRAY_H_
+#define  _BASICSHADER_CSE_GRAY_H_
 
 #include "cocos2d.h"
 #include "GameResources.h"
@@ -8,12 +8,8 @@ USING_NS_CC;
 
 namespace basicshader {
 
-	class CSEColorRamp : public cocos2d::Layer
+	class CSEGray : public cocos2d::Layer
 	{
-		Sprite * sprite;				//1
-		int colorRampUniformLocation;	//2
-		Texture2D * colorRampTexture;	//3
-
 		public:
 			// there's no 'id' in cpp, so we recommend returning the class instance pointer
 			static cocos2d::Scene* createScene();
@@ -22,9 +18,11 @@ namespace basicshader {
 			virtual bool init();
 
 			// implement the "static create()" method manually
-			CREATE_FUNC(CSEColorRamp);
+			CREATE_FUNC(CSEGray);
+
+			void graySprite(Sprite * sprite);
 	};
 
 }
 
-#endif  // _BASICSHADER_CSE_COLOR_RAMPS_H_
+#endif  // _BASICSHADER_CSE_GRAY_H_

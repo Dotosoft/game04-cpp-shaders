@@ -2,16 +2,22 @@
 precision mediump float;
 #endif
 
+#ifdef GL_ES
+varying mediump vec2 v_texCoord;
+#else
 varying vec2 v_texCoord;
+#endif
+
 uniform sampler2D u_texture;
 uniform sampler2D u_colorRampTexture;
 
 void main()
-{ vec3 normalColor = texture2D(u_texture, v_texCoord).rgb;
+{ 
+vec3 normalColor = texture2D(u_texture, v_texCoord).rgb;
 
-  float rampedR = texture2D(u_colorRampTexture, vec2(normalColor.r, 0)).r;
-  float rampedG = texture2D(u_colorRampTexture, vec2(normalColor.g, 0)).g;
-  float rampedB = texture2D(u_colorRampTexture, vec2(normalColor.b, 0)).b;
+float rampedR = texture2D(u_colorRampTexture, vec2(normalColor.r, 0)).r;
+float rampedG = texture2D(u_colorRampTexture, vec2(normalColor.g, 0)).g;
+float rampedB = texture2D(u_colorRampTexture, vec2(normalColor.b, 0)).b;
 
-  gl_FragColor = vec4(rampedR, rampedG, rampedB, 1);
+gl_FragColor = vec4(rampedR, rampedG, rampedB, 1);
 }

@@ -10,6 +10,10 @@ namespace basicshader {
 
 	class CSEEmboss : public cocos2d::Layer
 	{
+		Sprite *sprite;  //1
+		int timeUniformLocation;
+		float totalTime;
+
 		public:
 			// there's no 'id' in cpp, so we recommend returning the class instance pointer
 			static cocos2d::Scene* createScene();
@@ -19,6 +23,8 @@ namespace basicshader {
 
 			// implement the "static create()" method manually
 			CREATE_FUNC(CSEEmboss);
+
+			void update(float dt);
 	};
 
 }

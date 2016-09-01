@@ -53,13 +53,29 @@ bool HelloWorld::init()
 	auto grass = MenuItemFont::create("Grass", [&](Ref * sender) {
 		Director::getInstance()->pushScene(CSEGrass::createScene());
 	});
-	// 7.2 - Create menu
-	auto menu = Menu::create(itemColorRamp, emboss, grass, NULL);
+	// 7.2 - Grass menu item
+	auto medium = MenuItemFont::create("Medium", [&](Ref * sender) {
+		Director::getInstance()->pushScene(CSEMedium::createScene());
+	});
+	// 7.3 - Grass menu item
+	auto blink = MenuItemFont::create("Blink", [&](Ref * sender) {
+		Director::getInstance()->pushScene(CSEBlink::createScene());
+	});
+	// 7.4 - Grass menu item
+	auto gray = MenuItemFont::create("Gray", [&](Ref * sender) {
+		Director::getInstance()->pushScene(CSEGray::createScene());
+	});
+	// 7.x - Create menu
+	auto menuA = Menu::create(itemColorRamp, emboss, grass, NULL);
+	auto menuB = Menu::create(medium, blink, gray, NULL);
 	// 8 - Configure menu
-	menu->alignItemsHorizontallyWithPadding(20);
-	menu->setPosition(ccp(size.width / 2, size.height / 2 - 50));
+	menuA->alignItemsHorizontallyWithPadding(20);
+	menuB->alignItemsHorizontallyWithPadding(20);
+	menuA->setPosition(ccp(size.width / 2, size.height / 2 - 50));
+	menuB->setPosition(ccp(size.width / 2, size.height / 2 - 100));
 	// 9 - Add the menu to the layer
-	this->addChild(menu);
+	this->addChild(menuA);
+	this->addChild(menuB);
 
     return true;
 }

@@ -7,7 +7,8 @@ varying mediump vec2 v_texCoord;
 varying vec2 v_texCoord;
 #endif
 
-void main() {
-gl_Position = u_MVPMatrix * a_position;
-v_texCoord = a_texCoord;
+void main()
+{
+	gl_Position = CC_MVPMatrix * a_position;
+	v_texCoord = a_texCoord;
 }

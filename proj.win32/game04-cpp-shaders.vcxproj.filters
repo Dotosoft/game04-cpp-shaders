@@ -39,6 +39,15 @@
     <ClCompile Include="..\Classes\basicshader\CSEGrass.cpp">
       <Filter>src\basicshader</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\basicshader\CSEMedium.cpp">
+      <Filter>src\basicshader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\basicshader\CSEBlink.cpp">
+      <Filter>src\basicshader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\basicshader\CSEGray.cpp">
+      <Filter>src\basicshader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -60,6 +69,15 @@
       <Filter>src\basicshader</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\basicshader\CSEGrass.h">
+      <Filter>src\basicshader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\basicshader\CSEMedium.h">
+      <Filter>src\basicshader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\basicshader\CSEBlink.h">
+      <Filter>src\basicshader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\basicshader\CSEGray.h">
       <Filter>src\basicshader</Filter>
     </ClInclude>
   </ItemGroup>
